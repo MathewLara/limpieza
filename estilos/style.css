@@ -1,0 +1,80 @@
+/*Aqui va los comentarios de css*/
+*{
+    /*Elimina el margen por defecto*/
+    margin: 0;
+    /*Elimina el espacio por defecto*/
+    padding: 0;
+    /*Se definen los modelos de caja de los navegadores*/
+    -webkit-box-sizing: border-box;
+    -moz-webkit-box-sizing: border-box;
+    box-sizing: border-box;
+
+
+}
+/*Estilos para el cuerpo*/
+body{
+    /*Establece la fuente del documento*/
+    font-family: "Alegreya SC", Arial, Helvetica, sans-serif;
+    /*Establece el tama;o de la fuente*/
+    font-size: 16px;
+}
+
+/*Le damos estilo a la clase contenedor*/
+.contenedor
+{
+    /* El contenedor usa el 90%de la pantalla */
+    width: 90%;
+    /*El ancho maximo del contenedor es de 1000px*/
+    max-width: 1000px;
+    /*Se centra el contenedor*/
+    margin:auto;
+    /*Oculta el contenido desbordado*/
+    overflow: hidden;
+}
+/*------Header-------*/
+
+
+header .menu{
+    width: 100%;
+    /*Alinea los elemntos de menu al centro*/
+    text-align: left;
+    /*Hace que el menu se quede fijo*/
+    position: fixed;
+    /*A;ade espacio arriba y abajo*/
+    padding: 10px 0;
+    /*Hace que el menu este sobre alto sobre otros elementos*/
+    z-index: 1000;
+    /*Coloca el menu en la parte superior*/
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 255, 128, 0.479);
+}
+
+header .menu a {
+    color: #000000;
+    font-size: 20px;
+    /*Establece el peso de la fuente*/
+    font-weight: 300;
+    /*Hace que los enlaces se muestren como bloques*/
+    display: inline-block;
+    margin: 15px 10px;
+    /*Elimina la linea de la parte de abajo de los botones*/
+    text-decoration: none;
+    position: relative;
+}
+/*pseudo clase*/
+/*al pasar el mouse se activa*/
+header .menu a:hover{
+    /*le pone color al seleccionar botones*/
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+}
+
+header .texto {
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    top: 50%;
+    margin-top: -52px;
+    text-align: center;
+}
