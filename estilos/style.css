@@ -19,6 +19,12 @@ body{
     font-size: 16px;
 }
 
+header {
+    position: relative;
+    width: 100%;
+    padding-top: 100px;
+}
+
 /*Le damos estilo a la clase contenedor*/
 .contenedor
 {
@@ -32,16 +38,33 @@ body{
     overflow: hidden;
 }
 /*------Header-------*/
+/*Datos de contacto*/
+/*iconos*/
+.contacto a {
+    display: inline-flex;
+    align-items: center;
+    color: #000000;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 10px 15px;
+}
 
+.contacto a .icono {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
 
-header .menu{
+.datos-contacto{
     width: 100%;
     /*Alinea los elemntos de menu al centro*/
     text-align: left;
+    display: flex;
+    justify-content: space-between;
     /*Hace que el menu se quede fijo*/
     position: fixed;
     /*A;ade espacio arriba y abajo*/
-    padding: 10px 0;
+    padding: 5px 20px;
     /*Hace que el menu este sobre alto sobre otros elementos*/
     z-index: 1000;
     /*Coloca el menu en la parte superior*/
@@ -50,31 +73,55 @@ header .menu{
     background-color: rgba(0, 255, 128, 0.479);
 }
 
-header .menu a {
+.datos-contacto .contacto a {
     color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     /*Establece el peso de la fuente*/
     font-weight: 300;
     /*Hace que los enlaces se muestren como bloques*/
     display: inline-block;
-    margin: 15px 10px;
+    margin: 5px 8px;
     /*Elimina la linea de la parte de abajo de los botones*/
     text-decoration: none;
     position: relative;
 }
 /*pseudo clase*/
 /*al pasar el mouse se activa*/
-header .menu a:hover{
+.datos-contacto .contacto a:hover{
     /*le pone color al seleccionar botones*/
     text-decoration: underline;
     color: rgb(255, 255, 255);
 }
 
-header .texto {
-    width: 100%;
-    color: #ffffff;
-    position: absolute;
-    top: 50%;
-    margin-top: -52px;
+.datos-contacto .titulo {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+}
+/*Titulo principal*/
+.texto{
     text-align: center;
+    color: #000000;
+    padding-top: 100px;
+}
+
+.texto .nombre-emprendimiento{
+    font-size: 50px;
+    font-weight: 600;
+    margin-top: 40px;
+}
+/*Cuadro de la informacion*/
+.cuadro-informacion {
+    background-color: rgba(233, 239, 244, 0.775);
+    text-align: center;
+    padding: 30px 20px;
+    margin: 20px auto;
+    display: block;
+    box-shadow: 15px 0px 15px 0px rgb(0, 0, 0, 0.1);
+}
+.cuadro-informacion p {
+    font-size: 16px;
+    color: #000000;
+    max-width: 700px;
+    margin: 0 auto;
 }
