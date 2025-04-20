@@ -167,6 +167,13 @@ header {
     background-color: #7AA931;
     color: rgb(0, 0, 0);
 }
+/*titulo de categoria*/
+.titulo-categoria {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
 /*Barra lateral y contenedor principal*/
 .contenedor-principal {
     flex: 1;
@@ -211,6 +218,53 @@ header {
 .botones-categoria hover {
     background-color: #7AA931;
     color: #000000;
+}
+/*Seccion imagenes productos*/
+ .productos-grid {
+    width: 100%;
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 40px;
+    padding: 20px;
+ }
+.producto{
+    height: 320px;
+    width: 100%;
+    background-color: #fff;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    height: auto;
+    box-shadow: 8px 4px 8px 4px rgba(0, 0, 0, 0.1);
+}
+.producto img {
+    height: auto;
+    width: 100%;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+.producto p {
+    font-weight: bold;
+    margin: 8px 0;
+}
+/*Boton mas informacion*/
+.btn-info {
+    display: inline-block;
+    margin-top: auto;
+    padding: 8px 15px;
+    background-color: #003057;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+.btn-info:hover{
+    background-color: #003057;
 }
 /*Footer de la pagina*/
 .footer {

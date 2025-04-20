@@ -11,15 +11,30 @@
 
 
 }
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
 /*Estilos para el cuerpo*/
 body{
+    height: 100%;
+    display: flex;
+    flex-direction:column ;
+    min-height: 100vh;
     /*Establece la fuente del documento*/
     font-family: "Alegreya SC", Arial, Helvetica, sans-serif;
     /*Establece el tama;o de la fuente*/
     font-size: 16px;
+    margin: 0;
+    padding: 0;
 }
 
 header {
+    background: url('../imagenes/fondo.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
     position: relative;
     width: 100%;
     padding-top: 100px;
@@ -43,6 +58,7 @@ header {
 .logo {
     width: 300px;
     height: auto;
+    box-shadow: 15px 0px 15px 0px rgb(0, 0, 0, 0.1);
 }
 
 .contacto a {
@@ -115,6 +131,7 @@ header {
 }
 /*Cuadro de la informacion*/
 .cuadro-informacion {
+    width: 800px;
     background-color: rgba(233, 239, 244, 0.775);
     text-align: center;
     padding: 30px 20px;
@@ -125,7 +142,7 @@ header {
 .cuadro-informacion p {
     font-size: 16px;
     color: #000000;
-    max-width: 700px;
+    max-width: 800px;
     margin: 0 auto;
 }
 /*Seccion botones de seccion*/
@@ -150,28 +167,73 @@ header {
     background-color: #7AA931;
     color: rgb(0, 0, 0);
 }
-/*Barra lateral y contenedor principal*/
-.contenedor-principal {
-    display: flex;
+/*Seccion de las ofertas y imagenes*/
+.contenedor-ofertas {
+    max-width: 1000px;
+    margin: 0 auto;
     padding: 20px;
+}
+.oferta-destacada {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 40px;
     gap: 20px;
 }
-
-.barra-lateral {
-    background-color: #003057;
-    padding: 20px;
-    width: 200px;
-    margin-right: 20px;
+.imagenes-oferta {
+    display: flex;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
 }
-.barra-lateral input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    font-size: 16px;
+.img-oferta {
+    width: 180px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+.info-oferta {
+    flex: 1;
+    text-align: left;
+    margin-bottom: 40px;
+}
+.info-oferta h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #7AA931;
+}
+.info-oferta p {
+    font-size: 28px;
+}
+/*Combo oferta*/
+.combo-oferta{
+    text-align: center;
+}
+.combo-oferta h2 {
+    font-size: 24px;
+    color: #c0392b;
+    margin-bottom: 15px;
+}
+.combo-productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+.combo-productos img {
+    width: 160px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+.combo-info {
+    font-size: 18px;
+    color: #003057;
 }
 /*Footer de la pagina*/
 .footer {
-    background-color: #79a93186;
+    background-color: #003057;
     color: #fff;
     padding: 30px 0;
     font-size: 14px;
@@ -202,4 +264,57 @@ header {
 }
 .footer p {
     margin: 5px 0;
+}
+@media screen and (max-width: 400px){
+    .logo img{
+        width: 100px;
+        margin-top: 20px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .producto {
+        width: 100%;
+        margin: 10px auto;
+    }
+
+    .texto h1 {
+        font-size: 24px;
+    }
+    .texto h3 {
+        font-size: 18px;
+    }
+    .footer .contenedor {
+        flex-direction: column;
+        text-align: center;
+    }
+    .cuadro-informacion {
+        width: 90%;
+        padding: 15px;
+        margin: 10px;
+        text-align: justify;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+    .datos-contacto {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 15px;
+        text-align: left;
+    }
+    .datos-contacto .contacto{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    .datos-contacto .contacto a {
+        font-size: 14px;
+        margin: 2px 0;
+    }
+    .datos-contacto .titulo {
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+        width: 100%;
+    }
 }

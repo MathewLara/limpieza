@@ -167,50 +167,36 @@ header {
     background-color: #7AA931;
     color: rgb(0, 0, 0);
 }
-/*Barra lateral y contenedor principal*/
-.contenedor-principal {
+/*Imagen del producto especifico y imagen referencial*/
+.producto-detalle {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    max-width: 1000px;
+    margin: 40px auto 60px auto;
+    background-color: #fff;
+    padding: 20px;
+    gap: 40px;
+}
+.producto-img {
+    max-width: 300px;
+    width: 100%;
+    border-radius: 10px;
+}
+.producto-info {
     flex: 1;
-    display: flex;
-    padding: 20px;
-    gap: 20px;
+    min-width: 250px;
 }
-
-.barra-lateral {
-    width: 100%;
-    background-color: #9fa0a0;
-    padding: 20px;
-    width: 200px;
-    margin-right: 20px;
-    box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.1);
-}
-.barra-lateral input {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    font-size: 16px;
-}
-/*Botones categoria*/
-.botones-categoria {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin-top: 20px;
-}
-.botones-categoria a {
-    display: block;
-    padding: 12px 20px;
-    background-color: #7AA931;
+.producto-info h1{
+    margin-top: 0;
+    font-size: 28px;
     color: #000000;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    font-weight: bold;
-    border: 2px solid #000000;
-    transition: background-color 0.3s ease;
+    margin-bottom: 15px;
 }
-.botones-categoria hover {
-    background-color: #7AA931;
+.producto-info p {
+    font-size: 18x;
     color: #000000;
+    line-height: 1.6;
 }
 /*Footer de la pagina*/
 .footer {
